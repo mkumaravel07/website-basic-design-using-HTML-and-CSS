@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;background: #555;font-family: "Helvetica Neue", Helvetica, sans-serif;}
+
+
+        	#container 
+		{
+            		position: fixed;
+            		width: 343px;
+            		height: 550px;
+            		top: 50%;
+            		left: 50%;
+            		margin-top: -267.5px;
+            		margin-left: -170px;
+            		background: #333;
+            		border-radius: 3px;
+            		border: 1px solid #333;
+            		box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+		}
+
+
+
+        	#lower
+		{
+            		position: fixed;
+            		width: 300px;
+            		height: 69px;
+            		top: 50%;
+            		left: 50%;
+            		margin-top: -75px;
+            		margin-left: 210px;
+            		background: #2A2A2A;
+              	
+              	
+            		border-bottom-right-radius: 3px;
+            		border-bottom-left-radius: 3px;
+		}
+
+
+        	form 
+		{
+            		margin: 0 auto;
+            		margin-top: 20px;
+        	}
+        	label 
+		{
+            		color: white;
+            		margin-left: 18px;
+            		padding-top: 10px;
+            		font-size: 14px;
+        	}
+        	label.my  
+		{
+            		color: white;
+            		margin-left: 30px;
+			margin-top: 30px;
+            		padding-top: 10px;
+            		font-size: 20px;
+        	}
+'
+		input 
+		{
+            		font-family: "Helvetica Neue", Helvetica, sans-serif;
+            		font-size: 12px;
+            		outline: none;
+        	}
+        	input[type=text],input[type=password] ,input[type=time], input[type=email]
+		{
+            		color: #444;
+            		padding-left: 10px;
+            		margin: 10px;
+            		margin-top: 12px;
+            		margin-left: 18px;
+            		width: 290px;
+            		height: 35px;
+            		border: 1px solid #c7d0d2;
+           		border-radius: 3px;
+            		box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+            	}
+		a:link    
+		{
+
+			color:#A2A2A2; 
+			background-color:transparent; 
+			text-decoration:none
+		}
+        	input.my[type=submit] 
+		{
+            		float: right;
+            		margin-right: 1px;
+            		margin-top: -40px;
+            		width: 341px;
+            		height: 69px;
+            		font-size: 30px;
+            		font-weight: bold;
+            		color: #FFFFFF;
+            		background-color: #2A2A2A;	
+
+        	}
+
+
+
+
+ul.sidenav li a.active1 {
+    background-color: #555;
+    color: white;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 1050px){
+    ul.sidenav {
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left:0;}
+}
+	ul.topnav li.right {float: right;}
+}
+</style>
+</head>
+<body>
+
+<ul class="sidenav">
+<br>
+  <li><a class="active" href="home.html">SHOPPING.com<br>Home</a></li>
+  <br>
+  <li><a href="electronics.html">Electronics</a></li>
+  <li><a href="appliances.html">Appliance</a></li>
+  <li><a href="men.html">Men</a></li>
+  <li><a href="women.html">Women</a></li>
+  <li><a href="baby.html">Baby & Kids</a></li>
+  <li><a href="homefurn.html">Home & Furniture</a></li>
+  <li><a href="books.html">Books & more</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a class="active1" href="#registerl">Create an account</a></li>
+  <li><a href="about.html">About</a></li>
+  
+  		<div id="container">
+			<form action="login_process.php" method="post">
+                    			<input type="text" id="username" name="username" required placeholder="First name">
+                    			<input type="text" id="username" name="username" required placeholder="Last name">
+					<br>&emsp;
+                    		<input type="radio" name="gender" value="male"><label>Male &emsp;</label>
+  				<input type="radio" name="gender" value="female"><label>Female &emsp;</label>
+  				<input type="radio" name="gender" value="other"><label>Other</label><br><br>
+				
+  					<label>Date of birth:</label>&emsp;&emsp;
+  						<input type="date" name="DOB"><br>
+				<br>
+                    			<input type="text" id="username" name="username" required placeholder="Username">
+                    			<input type="email" id="username" name="email" required placeholder="E-mail">
+                    			<input type="password" id="password" name="password" required placeholder="Password">
+                    			<input type="password" id="password" name="password" required placeholder="Re-enter password"><br><br><br>				
+				<form action="demo_form.asp">	<br>	
+						<input class="my" type="submit" formaction="login.html" value="Sign up">
+				</form>
+				</form>	
+		</div>
+  
+</ul>
+</body>
+</html>

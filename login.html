@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        	html, body 
+		{
+            		width: 100%;
+            		height: 100%;
+            		font-family: "Helvetica Neue", Helvetica, sans-serif;
+            		color: #444;
+            		-webkit-font-smoothing: antialiased;
+            		background: #555;
+        	}
+			ul.sidenav li a.active1 {
+    background-color: #555;
+    color: white;
+}
+        	#container 
+		{
+            		position: fixed;
+            		width: 340px;
+            		height: 296px;
+            		top: 50%;
+            		left: 50%;
+            		margin-top: -140px;
+            		margin-left: -170px;
+            		background: #333;
+            		border-radius: 3px;
+            		border: 1px solid #555;
+            		box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+		}
+        	form 
+		{
+            		margin: 0 auto;
+            		margin-top: 20px;
+        	}
+        	label 
+		{
+            		color: white;
+            		margin-left: 18px;
+            		padding-top: 10px;
+            		font-size: 14px;
+        	}
+		input 
+		{
+            		font-family: "Helvetica Neue", Helvetica, sans-serif;
+            		font-size: 12px;
+            		outline: none;
+        	}
+        	input[type=text],input[type=password] ,input[type=time], input[type=email]
+		{
+            		color: #777;
+            		padding-left: 10px;
+            		margin: 10px;
+            		margin-top: 12px;
+            		margin-left: 18px;
+            		width: 290px;
+            		height: 35px;
+            		border: 1px solid #c7d0d2;
+           		border-radius: 3px;
+            		box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+            	}
+        	#lower 
+		{
+            		background: #2A2A2A;
+            		width: 100%;
+            		height: 55px;
+            		margin-top: 20px;
+              		box-shadow: inset 0 1px 1px #2A2A2A;
+            		border-top: 1px solid #2A2A2A;
+            		border-bottom-right-radius: 3px;
+            		border-bottom-left-radius: 3px;
+        	}
+        	#lower1 
+		{
+            		background: #202020;
+            		width: 100%;
+            		height: 40px;
+            		margin-top: 0px;
+              		box-shadow: inset 0 1px 1px #202020;
+            		border-top: 1px solid #202020;
+            		border-bottom-right-radius: 3px;
+            		border-bottom-left-radius: 3px;
+        	}
+        	input[type=checkbox] 
+		{
+            		margin-left: 20px;
+            		margin-top: 20px;
+        	}
+        	.check 
+		{
+            		margin-left: 5px;
+            		font-size: 11px;
+            		color: white;
+        	}
+        	input[type=submit] 
+		{
+            		float: right;
+            		margin-right: 20px;
+            		margin-top: 15px;
+           		width: 80px;
+            		height: 30px;
+            		font-size: 14px;
+            		font-weight: bold;
+            		color: #fff;
+            		background-color: #4CAF50;
+            		border-radius: 30px;
+            		border: 1px solid #4CAF50;
+            		box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+
+        	}
+        	input.my[type=submit] 
+		{
+            		float: right;
+            		margin-right: 20px;
+            		margin-top: -35px;
+            		width: 75px;
+            		height: 25px;
+            		font-size: 14px;
+            		font-weight: bold;
+            		color: #fff;
+					border: 1px solid #4CAF50;
+            		background-color: #4CAF50;	
+			border-radius: 30px;
+        	}
+
+
+
+
+
+
+
+body {margin: 0;}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 1050px){
+    ul.sidenav {
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left:0;}
+}
+	ul.topnav li.right {float: right;}
+}
+</style>
+</head>
+<body>
+
+<ul class="sidenav">
+<br>
+  <li><a class="active" href="home.html">SHOPPING.com<br>Home</a></li>
+  <br>
+  <li><a href="electronics.html">Electronics</a></li>
+  <li><a href="appliances.html">Appliance</a></li>
+  <li><a href="men.html">Men</a></li>
+  <li><a href="women.html">Women</a></li>
+  <li><a href="baby.html">Baby & Kids</a></li>
+  <li><a href="homefurn.html">Home & Furniture</a></li>
+  <li><a href="books.html">Books & more</a></li>
+  <li><a class="active1" href="#login">Login</a></li>
+  <li><a href="register.html">Create an account</a></li>
+  <li><a href="about.html">About</a></li>
+ </ul>
+ <div id="container">
+			<form action="login_process.php" method="post">
+                    		<label>Username:</label>
+                    			<input type="email" id="username" name="email" required placeholder="Username or E-mail" >
+                    		<label>Password:</label>
+                    			<input type="password" id="password" name="password"  required placeholder="Password">
+                    		<div id="lower">
+                        		<input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
+                        		<form action="demo_form.asp">
+								<input type="submit" formaction="home.html" value="Login">
+								</form>
+                    		</div>	
+			</form>
+			<div id="lower1">                			    			
+				<form action="demo_form.asp">		
+					<p style="font-size:60%;" >&emsp;&emsp;<font color="white">Not registered sign up ?</font></p>
+						<input class="my" type="submit" formaction="register.html" value="Sign up">
+				</form>	
+			</div>
+            	</div>
+ 
+ </body>
+</html>

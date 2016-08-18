@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;background: #555;font-family: "Helvetica Neue", Helvetica, sans-serif;}
+ul.sidenav li a.active1 {
+    background-color: #555;
+    color: white;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 1050px){
+    ul.sidenav {
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left:0;}
+}
+	ul.topnav li.right {float: right;}
+}
+</style>
+</head>
+<body>
+
+<ul class="sidenav">
+<br>
+  <li><a class="active" href="#home">SHOPPING.com<br>Home</a></li>
+  <br>
+  <li><a href="electronics.html">Electronics</a></li>
+  <li><a href="appliances.html">Appliance</a></li>
+  <li><a href="men.html">Men</a></li>
+  <li><a href="women.html">Women</a></li>
+  <li><a href="baby.html">Baby & Kids</a></li>
+  <li><a href="homefurn.html">Home & Furniture</a></li>
+  <li><a href="books.html">Books & more</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="register.html">Create an account</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+</body>
+</html>
